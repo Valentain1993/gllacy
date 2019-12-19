@@ -1,0 +1,144 @@
+body {
+    background-image: url(img/Фон.png);
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+}
+
+.main-nav {
+    display: flex;
+}
+
+.main-nav h1 {
+    display: none;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Вопрос: почему если применить к этому селектору вот такие значения
+    {font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;}
+    то все работает, кроме цвета, а если к селектору .nav a, то все норм? */
+.nav {
+    display: flex;
+}
+
+.logo {
+    margin-right: 25px;
+}
+
+/* как сделать подчеркивание ссылок тоньше и полупрозрачными? */
+.nav a {
+    margin-right: 25px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0,5);
+}
+
+.menu {
+    display: flex;
+    
+}
+
+.menu_search {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 35px;
+    height: 35px;
+    background-color: #9db2a7;
+    border-radius: 50%;
+}
+
+.menu_search,
+.menu_enter,
+.menu_basket {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 35px;
+    background-color: #9db2a7;
+    border-radius: 50%;
+
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.menu_search,
+.menu_enter,
+.menu_basket img {
+    margin-right: 10px;
+}
+
+.menu_enter,
+.menu_basket {
+    padding-right: 15px;
+    border-radius: 20px;
+}
+
+.menu_enter img,
+.menu_basket img {
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.menu_contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contacts_tel {
+    font-size: 22px;
+}
+
+.main-stocks {
+    display: flex;
+}
+
+.stock-malina {
+    background-image: url(img/Малиновый_фон.png);
+    background-repeat: no-repeat;
+    border-radius: 10px;
+
+    color: #ffffff;
+    /* Почему заголовок в этом случае еще больше опускается? при свойстве {margin-top: 20px;} 
+    Пока я эти отступы прям у заголовка прописала, но все равно как-то не очень получается*/
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.stock-malina h2 {
+    font-size: 35px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.stock-malina p {
+    font-size: 18px;
+    
+}
+
+
+
