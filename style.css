@@ -113,6 +113,8 @@ body {
     font-size: 22px;
 }
 
+
+/* Часть про основные акции */
 .main-stocks {
     display: flex;
 }
@@ -120,6 +122,7 @@ body {
 .stock-malina {
     background-image: url(img/Малиновый_фон.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     border-radius: 10px;
 
     color: #ffffff;
@@ -127,18 +130,101 @@ body {
     Пока я эти отступы прям у заголовка прописала, но все равно как-то не очень получается*/
     padding-left: 20px;
     padding-right: 20px;
+
+    margin: 0 25px;
 }
 
-.stock-malina h2 {
+.stock-malina h2,
+.stock-chocolate h2 {
     font-size: 35px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    /* margin-top: 20px;
+    margin-bottom: 30px; */
 }
 
-.stock-malina p {
+.stock-malina p,
+.stock-chocolate p {
     font-size: 18px;
-    
+    font-weight: 700;
 }
+
+.stock-chocolate {
+    background-image: url(img/Шоколадный_фон.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+
+    color: #ffffff;
+    /* Почему заголовок в этом случае еще больше опускается? при свойстве {margin-top: 20px;} 
+    Пока я эти отступы прям у заголовка прописала, но все равно как-то не очень получается*/
+    padding-left: 20px;
+    padding-right: 20px;
+
+    margin-right: 25px;
+}
+
+
+/* Не забудь про градиенты и тень */
+.stock-malina__button,
+.stock-chocolate__button {
+    background-color: #f06543;
+    border-radius: 20px;
+    width: 165px;
+    height: 45px;
+    margin-bottom: 25px;
+}
+
+.popular-goods_list {
+    display: flex;
+    list-style: none;
+}
+
+
+/* это я пытаюсь сдвинуть картинку с надписью ХИТ, не получается...
+.popular-goods_list_img_hit {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+*/
+
+
+.info-company {
+    background-image: url(img/Вафля-фон.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 10px;
+}
+
+.info-company__main {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+.info-company__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    
+    padding-bottom: 15px;
+
+}
+
+.info-company__list li {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    padding-right: 35px;
+}
+
+/* ну как не растягивать картинку по высоте?(((( */ 
+img li {
+    align-self: flex-start;
+}
+
+
 
 
 
